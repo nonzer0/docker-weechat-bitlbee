@@ -4,7 +4,7 @@ WEECHAT_UID=1000
 WEECHAT_GID=1000
 
 WEECHAT_USER=weechat
-WEECHAT_HOME=/weechat
+WEECHAT_HOME=/opt/weechat
 
 if [[ -z $IRC_SERVER ]]; then
     IRC_SERVER=localhost

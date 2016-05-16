@@ -1,4 +1,4 @@
-FROM       ubuntu
+FROM       ubuntu:xenial
 MAINTAINER Florian Klink <flokli@flokli.de>
 
 RUN apt-get update && apt-get install -y \

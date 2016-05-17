@@ -47,7 +47,7 @@ if [[ $IRC_SERVER == "localhost" ]]; then
 fi
 
 echo "Running weechat."
-export TERM=xterm-256color
+export TERM=screen-256color
 
 if [[ -z $NO_AUTO_CONNECT ]]; then
     SERVER_ARG="irc://$IRC_SERVER/"

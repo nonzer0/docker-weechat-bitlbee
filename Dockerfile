@@ -8,7 +8,8 @@ RUN bash -c "echo 'deb-src https://weechat.org/ubuntu yakkety main' >>/etc/apt/s
 
 RUN apt-get update && apt-get install -y \
   weechat weechat-plugins weechat-scripts \
-  bitlbee bitlbee-plugin-otr
+  bitlbee bitlbee-plugin-otr \
+  rxvt-unicode-256color
 
 RUN locale-gen en_US.UTF-8
 RUN locale-gen de_DE.UTF-8

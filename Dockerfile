@@ -1,4 +1,4 @@
-FROM       ubuntu:xenial
+FROM       ubuntu:yakkety
 MAINTAINER Florian Klink <flokli@flokli.de>
 
 RUN apt-get update && apt-get install -y \

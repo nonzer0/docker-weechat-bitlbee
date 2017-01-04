@@ -8,6 +8,7 @@ RUN bash -c "echo 'deb-src https://weechat.org/ubuntu yakkety main' >>/etc/apt/s
 
 RUN apt-get update && apt-get install -y \
   weechat weechat-plugins weechat-scripts \
+  python-pip \
   bitlbee bitlbee-plugin-otr \
   rxvt-unicode-256color
 
@@ -16,6 +17,8 @@ RUN locale-gen de_DE.UTF-8
 RUN ln -sf /usr/share/zoneinfo/Europe/Berlin /etc/localtime
 
 ADD bitlbee.conf /etc/bitlbee/bitlbee.conf
+
+RUN pip install websocket-client
 
 ADD run.sh /run.sh
 RUN chmod +x /run.sh

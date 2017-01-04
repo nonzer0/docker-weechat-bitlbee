@@ -40,7 +40,7 @@ chown ${WEECHAT_USER}.${WEECHAT_USER} $WEECHAT_HOME
 
 if [[ $IRC_SERVER == "localhost" ]]; then
     echo "Starting bitblee."
-    su - $WEECHAT_USER -c "/usr/sbin/bitlbee"
+    bitlbee -F -u $WEECHAT_USER -i localhost
 
     echo "Waiting for bitblee to start."
     sleep 2

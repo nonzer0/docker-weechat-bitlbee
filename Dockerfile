@@ -7,7 +7,7 @@ RUN bash -c "echo 'deb https://weechat.org/ubuntu yakkety main' >/etc/apt/source
 RUN bash -c "echo 'deb-src https://weechat.org/ubuntu yakkety main' >>/etc/apt/sources.list.d/weechat.list"
 
 RUN apt-get update && apt-get install -y \
-  weechat weechat-plugins weechat-scripts \
+  weechat weechat-curses weechat-plugins weechat-scripts weechat-python weechat-perl bitlbee-facebook\
   python-pip python-potr \
   bitlbee-libpurple bitlbee-plugin-otr \
   rxvt-unicode-256color
